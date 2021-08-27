@@ -16,16 +16,12 @@
     display: none;
 }
 
-#dish-scroller-card-selected,
-#beverage-scroller-card-selected,
-#dessert-scroller-card-selected {
+.card-selected {
     border: 4px solid var(--stGreen);
     padding: 13px 10px 0px 10px;
 }
 
-#dish-scroller-card-selected > img,
-#beverage-scroller-card-selected > img,
-#dessert-scroller-card-selected > img {
+.card-selected > img {
     display: block;
     width: 16px;
     height: 16px;
@@ -71,3 +67,4 @@
 .card:first-child {
     margin-left: 0px;
 }
+

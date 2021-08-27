@@ -9,7 +9,6 @@ import DishCard from './components/DishCard';
 import Footer from './components/Footer';
 
 function App() {
-
   return (
     <div className="App">
       <Header title="DrivenEats" subtitle="Sua comida em 6 minutos" />

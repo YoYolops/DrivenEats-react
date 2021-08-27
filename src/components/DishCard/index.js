@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './DishCard.css';
 
+import Quantifier from '../Quantifier';
+
 function DishCard(props) {
     const id = props.dishId;
+    const [ isClicked, setIsClicked ] = useState(false);
+
+    function toggleClickedCard() {
+        console.log("togglin");
+        setIsClicked(!isClicked)
+    }
 
     return (
-        <div className="card">
+        <div className={isClicked ? "card card-selected" : "card"} onClick={() => setIsClicked(true)}>
             <div className="img-container">
                 <img src={props.imgSrc} alt="Prato principal" />
             </div>
@@ -15,7 +23,7 @@ function DishCard(props) {
             <div className="dish-price-container">
                 <span className="dish-price">R$</span> <span className="dish-price">{props.price}</span>
             </div>
-            <img className="ico" alt="icone de verificacao" src="../../../assets/icos/check.png" />
+            {isClicked ? <Quantifier toggleClick={toggleClickedCard} /> : null}
         </div>
     )
 }
