@@ -28,7 +28,10 @@ export function AppProvider({children}) {
 
     function updateIsOrderValid() {
         for(const key in order) {
-            if(order[key] == null) return;
+            if(order[key] == null) {
+                setIsValidOrder(false);
+                return;
+            };
         }
 
         setIsValidOrder(true);

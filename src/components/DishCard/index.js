@@ -9,7 +9,6 @@ function DishCard(props) {
     const [ isClicked, setIsClicked ] = useState(false);
 
     function toggleClickedCard() {
-        console.log("togglin");
         setIsClicked(!isClicked)
     }
 

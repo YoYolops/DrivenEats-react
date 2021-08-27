@@ -109,49 +109,49 @@ export const beverage = [
 export const dessert = [
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 3589
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 6587
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 5788
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 1222
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 3654
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 7592
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 8264
     },
     {
         name: "Pavê",
-        description: "Doce de doce com doce acompanhado de açúcar",
+        description: "Doce de doce com doce",
         image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
         price: 4563
     },
