@@ -1,0 +1,31 @@
+footer {
+    height: 92px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    width: 90%;
+    max-width: 364px;
+    height: 61px;
+    border-radius: 30.5px;
+    padding: 5px 70px 5px 70px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: var(--darkGrey);
+    border: none;
+    outline: none;
+}
+
+#enabled {
+    background-color: var(--stGreen);
+    font-weight: bolder;
+}
