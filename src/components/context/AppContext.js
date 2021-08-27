@@ -39,7 +39,8 @@ export function AppProvider({children}) {
             order,
             isValidOrder,
             addOrderItem,
-            updateIsOrderValid
+            updateIsOrderValid,
+            customer
         }}>
             {children}
         </AppContext.Provider>

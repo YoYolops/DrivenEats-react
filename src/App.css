@@ -44,3 +44,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     width: 0px;
 }
+
+.app-content-container {
+  margin-top: 92px;
+  margin-bottom: 92px;
+  padding: 20px 0px 10px 0px;
+  background-color: var(--stGrey);
+}
