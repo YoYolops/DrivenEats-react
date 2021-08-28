@@ -26,7 +26,7 @@ export function AppProvider({children}) {
         const newOrder = {...order};
 
         for(let i = 0; i < newOrder[key].length; i++) {
-            if(newOrder[key][i] === orderId) {
+            if(newOrder[key][i].id === orderId) {
                 newOrder[key].splice(i,1);
             }
         }
