@@ -9,10 +9,6 @@ export function AppProvider({children}) {
         dessert: []
     });
     const [ isValidOrder, setIsValidOrder ]  = useState(false);
-    const [ customer, setCustomer ] = useState({
-        name: null,
-        address: null
-    })
 
     function addOrderItem(orderData, key) {
         const newOrder = {...order};
@@ -71,7 +67,6 @@ export function AppProvider({children}) {
             addOrderItem,
             removeOrderItem,
             updateIsOrderValid,
-            customer,
             updateOrderItems
         }}>
             {children}

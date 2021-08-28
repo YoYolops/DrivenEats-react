@@ -44,9 +44,9 @@
     const parsedTotalOrderPrice = parsePriceToString(totalOrderPrice)
 
     const message = `Olá, gostaria de fazer o pedido:\n 
-        - Prato(s): ${order.dish.map(dish => dish.name + " / ")}\n 
-        - Bebida(s): ${order.beverage.map(beverage => beverage.name + " / ")}\n 
-        - Sobremesa(s): ${order.dessert.map(dessert => dessert.name + " / ")}\n
+        - Prato(s): ${dish.map(dish => dish.name + " / ")}\n 
+        - Bebida(s): ${beverage.map(beverage => beverage.name + " / ")}\n 
+        - Sobremesa(s): ${dessert.map(dessert => dessert.name + " / ")}\n
         Total: R$ ${parsedTotalOrderPrice} 
         \n\n Nome: ${customer["name"]}
         \nEndereço: ${customer["address"]}`; 

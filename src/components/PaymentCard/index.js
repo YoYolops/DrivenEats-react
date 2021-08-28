@@ -8,16 +8,6 @@ import utils from '../../utils/utils';
 function PaymentCard(props) {
     const order = props.order;
 
-    function paymentValue() {
-        const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
-
-        const dishValue = order.dish.reduce(reducer, 0);
-        const beverageValue = order.beverage.reduce(reducer, 0);
-        const dessertValue = order.dessert.reduce(reducer, 0);
-
-        return dishValue + beverageValue + dessertValue;
-    }
-
     return (
         <>
             <div id="ordered-items">
@@ -30,7 +20,7 @@ function PaymentCard(props) {
                 {
                     order.dessert.map(item => <OrderedItem key={item.id} type={item.type} name={item.name} price={item.price}/>)
                 }
-                <p><span className="span" id="total-price">TOTAL</span> <span className="span" id="total-price">{utils.parsePriceToString(paymentValue())}</span></p>
+                <p><span className="span" id="total-price">TOTAL</span> <span className="span" id="total-price">{utils.parsePriceToString(props.paymentValue)}</span></p>
             </div>
             <div>
                 <div id="order-confirmation-button" className="confirmation-button" onClick={(event) => props.nextScreen(event)}>
