@@ -7,11 +7,7 @@ import AppContext from '../context/AppContext';
 function Footer() {
     const { isValidOrder } = useContext(AppContext);
     const { order } = useContext(AppContext);
-
-    function redirectToConfirmation() {
-        window.location.href += "confirmation";
-    }
-
+    
     return (
         <footer>
             {

@@ -3,7 +3,6 @@ import React from 'react';
 import './Main.css';
 import { dish, beverage, dessert } from '../../data/dishes.js';
 
-import Header from '../../components/Header';
 import DishSection from '../../components/DishSection';
 import Scroller from '../../components/Scroller';
 import DishCard from '../../components/DishCard';
