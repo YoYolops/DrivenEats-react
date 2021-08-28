@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import utils from '../../utils/utils';
 
 const AppContext = createContext({});
 
@@ -53,7 +52,6 @@ export function AppProvider({children}) {
         }
         addOrderItem(orderItem, orderItem.type);
         updateIsOrderValid(newOrder);
-        console.log(newOrder);
     }
 
     function updateIsOrderValid(newOrder) {

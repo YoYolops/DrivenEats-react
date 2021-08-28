@@ -10,7 +10,8 @@ footer {
     align-items: center;
 }
 
-footer button {
+footer button,
+.button {
     width: 90%;
     max-width: 364px;
     height: 61px;
@@ -23,6 +24,8 @@ footer button {
     background-color: var(--darkGrey);
     border: none;
     outline: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 #enabled {
