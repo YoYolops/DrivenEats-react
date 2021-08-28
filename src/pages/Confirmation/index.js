@@ -14,7 +14,7 @@ function Confirmation(props) {
     }
 
     function paymentValue() {
-        const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
+        const reducer = (accumulator, currentValue) => accumulator + (currentValue.price * currentValue.quantity);
 
         const dishValue = order.dish.reduce(reducer, 0);
         const beverageValue = order.beverage.reduce(reducer, 0);
@@ -26,9 +26,11 @@ function Confirmation(props) {
     return (
         <div id="popup-container">
             <div className="popup">
-                <h3 id="popup-title">Confirme seu pedido</h3>
-                {screen === 0 ? <PaymentCard order={order} nextScreen={nextScreen} paymentValue={paymentValue()}/> : <AddressCard order={order} paymentValue={paymentValue()}/>}
-            </div>
+                <h3 id="popup-title">Confirme seu pedido</h3>{
+                screen === 0 
+                    ? <PaymentCard order={order} nextScreen={nextScreen} paymentValue={ paymentValue() }/>
+                    : <AddressCard order={order} paymentValue={paymentValue()}/>
+            }</div>
         </div>
     )
 }

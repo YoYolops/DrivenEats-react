@@ -12,13 +12,13 @@ function PaymentCard(props) {
         <>
             <div id="ordered-items">
                 {
-                    order.dish.map(item => <OrderedItem key={item.id} type={item.type} name={item.name} price={item.price}/>)
+                    order.dish.map(item => <OrderedItem key={item.id} item={item}/>)
                 }
                 {
-                    order.beverage.map(item => <OrderedItem key={item.id} type={item.type} name={item.name} price={item.price}/>)
+                    order.beverage.map(item => <OrderedItem key={item.id} item={item}/>)
                 }
                 {
-                    order.dessert.map(item => <OrderedItem key={item.id} type={item.type} name={item.name} price={item.price}/>)
+                    order.dessert.map(item => <OrderedItem key={item.id} item={item}/>)
                 }
                 <p><span className="span" id="total-price">TOTAL</span> <span className="span" id="total-price">{utils.parsePriceToString(props.paymentValue)}</span></p>
             </div>
