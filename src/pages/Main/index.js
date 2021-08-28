@@ -12,7 +12,6 @@ import Footer from '../../components/Footer';
 function Main() {
     return (
         <div className="App">
-            <Header title="DrivenEats" subtitle="Sua comida em 6 minutos" />
             <div className="app-content-container">
                 <DishSection title="Primeiro, seu prato">
                     <Scroller scrollerID="dish-scroller">

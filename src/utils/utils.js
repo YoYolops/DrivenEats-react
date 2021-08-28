@@ -37,17 +37,16 @@
  * Generates a proper link based in customer's selections
  * @return {String} custom link for rediecting to WhatApp
  */
- function generateLinkToWhatsApp(order, customer) {
+ function generateLinkToWhatsApp(order, customer, totalOrderPrice) {
     const baseURL = "https://wa.me/5583996231204";
 
     const { dish, beverage, dessert } = order;
-    const totalOrderPrice = dish.price + beverage.price + dessert.price;
     const parsedTotalOrderPrice = parsePriceToString(totalOrderPrice)
 
     const message = `Olá, gostaria de fazer o pedido:\n 
-        - Prato: ${order.dish.name}\n 
-        - Bebida: ${order.beverage.name}\n 
-        - Sobremesa: ${order.dessert.name}\n
+        - Prato(s): ${order.dish.map(dish => dish.name + " / ")}\n 
+        - Bebida(s): ${order.beverage.map(beverage => beverage.name + " / ")}\n 
+        - Sobremesa(s): ${order.dessert.map(dessert => dessert.name + " / ")}\n
         Total: R$ ${parsedTotalOrderPrice} 
         \n\n Nome: ${customer["name"]}
         \nEndereço: ${customer["address"]}`; 

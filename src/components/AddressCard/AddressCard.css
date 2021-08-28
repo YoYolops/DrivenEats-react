@@ -25,3 +25,36 @@
 .input-box:focus {
     outline: none;
 }
+
+#address-confirmation-button {
+    width: 333px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #fff;
+    color: var(--stGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.address-cancel-button {
+    width: 333px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: inherit;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}

@@ -1,32 +1,23 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 
 import './Confirmation.css';
-import OrderedItem from '../../components/OrderedItem';
-
+import AddressCard  from '../../components/AddressCard';
+import PaymentCard from '../../components/PaymentCard';
 
 function Confirmation(props) {
     const order = props.order;
+    const [ screen, setScreen ] = useState(0);
+
+    function nextScreen(event) {
+        event.stopPropagation();
+        setScreen(screen + 1);
+    }
 
     return (
         <div id="popup-container">
             <div className="popup">
                 <h3 id="popup-title">Confirme seu pedido</h3>
-                <div id="ordered-items">
-                    {
-                        order.dish.map(item => <OrderedItem  type={item.type} name={item.name} price={item.price}/>)
-                    }
-
-                    {<p><span className="span" id="total-price">TOTAL</span> <span className="span" id="total-price"></span></p>}
-                </div>
-                <div>
-                    <div id="order-confirmation-button" className="confirmation-button">
-                        <a>Tudo certo, pode pedir!</a>
-                    </div>
-                    <div id="address-confirmation-button" className="hidden">
-                        <a>Finalizar</a>
-                    </div>
-                    <button>Cancelar</button>
-                </div>
+                {screen === 0 ? <PaymentCard order={order} nextScreen={nextScreen} /> : <AddressCard />}
             </div>
         </div>
     )

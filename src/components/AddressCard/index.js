@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './AddressCard.css';
+import utils from '../../utils/utils';
 
 function AddressCard() {
     return (
@@ -11,6 +12,8 @@ function AddressCard() {
             <div>
                 <label>Endereço: </label> <input required  id="customer-address-input" class="input-box" type="text" />
             </div>
+            <a id="address-confirmation-button">Finalizar</a>
+            <a href="/" className="address-cancel-button">Cancelar</a>
         </div>
     )
 }
