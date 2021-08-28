@@ -5,9 +5,9 @@ const AppContext = createContext({});
 
 export function AppProvider({children}) {
     const [ order, setOrder ] = useState({
-        dish: null,
-        beverage: null,
-        dessert: null
+        dish: [],
+        beverage: [],
+        dessert: []
     });
     const [ isValidOrder, setIsValidOrder ]  = useState(false);
     const [ customer, setCustomer ] = useState({
@@ -15,25 +15,54 @@ export function AppProvider({children}) {
         address: null
     })
 
-    function addOrderItem(itemData, key) {
+    function addOrderItem(orderData, key) {
         const newOrder = {...order};
-
-        newOrder[key] = {
-            name: itemData.name,
-            price: itemData.price
-        }
-
+        newOrder[key].push(orderData);
         setOrder(newOrder);
+        updateIsOrderValid();
     }
 
-    function updateIsOrderValid() {
-        for(const key in order) {
-            if(order[key] == null) {
+    function removeOrderItem(orderId, key) {
+        const newOrder = {...order};
+
+        for(let i = 0; i < newOrder[key].length; i++) {
+            if(newOrder[key][i] === orderId) {
+                newOrder[key].splice(i,1);
+            }
+        }
+        setOrder(newOrder);
+        updateIsOrderValid(newOrder);
+    }
+
+    function updateOrderItems(orderItem) {
+        if(orderItem.quantity === 0) {
+            removeOrderItem(orderItem.id, orderItem.type);
+            return;
+        }
+
+        const newOrder = {...order};
+        const changedArray = Array.from(newOrder[orderItem.type]);
+
+        for(let i = 0; i < changedArray.length; i++) {
+            if(changedArray[i].id === orderItem.id) {
+                changedArray.splice(i,1,orderItem);
+                newOrder[orderItem.type] = changedArray;
+                setOrder(newOrder);
+                return;
+            }
+        }
+        addOrderItem(orderItem, orderItem.type);
+        updateIsOrderValid(newOrder);
+        console.log(newOrder);
+    }
+
+    function updateIsOrderValid(newOrder) {
+        for(const key in newOrder) {
+            if(newOrder[key].length === 0) {
                 setIsValidOrder(false);
                 return;
             };
         }
-
         setIsValidOrder(true);
     }
 
@@ -42,8 +71,10 @@ export function AppProvider({children}) {
             order,
             isValidOrder,
             addOrderItem,
+            removeOrderItem,
             updateIsOrderValid,
-            customer
+            customer,
+            updateOrderItems
         }}>
             {children}
         </AppContext.Provider>

@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 
+import utils from '../../utils/utils.js';
 import './DishCard.css';
 
 import Quantifier from '../Quantifier';
 
 function DishCard(props) {
-    const id = props.dishId;
+    const dishData = {
+        id: props.dishId,
+        type: props.dishType,
+        name: props.name,
+        price: props.price
+    }
     const [ isClicked, setIsClicked ] = useState(false);
 
     function toggleClickedCard() {
@@ -20,9 +26,9 @@ function DishCard(props) {
             <h3>{props.name}</h3>
             <p className="dish-description">{props.description}</p>
             <div className="dish-price-container">
-                <span className="dish-price">R$</span> <span className="dish-price">{props.price}</span>
+                <span className="dish-price">R$</span> <span className="dish-price">{utils.parsePriceToString(props.price)}</span>
             </div>
-            {isClicked ? <Quantifier toggleClick={toggleClickedCard} /> : null}
+            {isClicked ? <Quantifier orderData={dishData} toggleClick={toggleClickedCard} /> : null}
         </div>
     )
 }

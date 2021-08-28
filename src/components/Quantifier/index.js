@@ -1,30 +1,42 @@
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 
 import './Quantifier.css';
+import AppContext from '../context/AppContext';
 
 function Quantifier(props) {
-    const [ quantity, setQuantity ] = useState(1);
+    const [ orderData, setOrderData ] = useState({...props.orderData, quantity: 1});
+    const { updateOrderItems } = useContext(AppContext);
+
+    useEffect(() => {
+        updateOrderItems({...props.orderData, quantity: 1});
+    }, [])
 
     function incrementQuantity(event) {
         event.stopPropagation();
 
-        setQuantity(quantity + 1);
+        const newOrderData = {...orderData};
+        newOrderData.quantity += 1;
+        updateOrderItems(newOrderData);
+        setOrderData(newOrderData);
     }
 
     function decrementQuantity(event) {
         event.stopPropagation();
 
-        if(quantity-1 === 0) {
+        const newOrderData = {...orderData};
+        if(newOrderData.quantity-1 === 0) {
             props.toggleClick();
         }
 
-        setQuantity(quantity - 1);
+        newOrderData.quantity -= 1;
+        updateOrderItems(newOrderData);
+        setOrderData(newOrderData);
     }
 
     return (
         <div className="quantifier">
             <p className="minus" onClick={(event) => {decrementQuantity(event)}}>-</p>
-            <p>{quantity}</p>
+            <p>{orderData.quantity}</p>
             <p className="plus" onClick={(event) => {incrementQuantity(event)}}>+</p>
         </div>
     )
