@@ -14,7 +14,7 @@ export function AppProvider({children}) {
         const newOrder = {...order};
         newOrder[key].push(orderData);
         setOrder(newOrder);
-        updateIsOrderValid();
+        updateIsOrderValid(newOrder);
     }
 
     function removeOrderItem(orderId, key) {
