@@ -110,49 +110,49 @@ export const dessert = [
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 3589
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 6587
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 5788
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 1222
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 3654
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 7592
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 8264
     },
     {
         name: "Pavê",
         description: "Doce de doce com doce",
-        image: "https://lh3.googleusercontent.com/proxy/LVfT0Xb1TI1VdLOblDEButZ8hZxIR88sk5DnD6bsI3GABXV-VFgmJ3AWru-oUgUjdW7rcAgXMIjH0YDM6FISsTAEL7FW9cdSLcKY_pJyKix9pGvyjtc",
+        image:"https://t1.rg.ltmcdn.com/pt/images/2/1/2/pave_dos_padres_facil_e_rapido_9212_600.jpg",
         price: 4563
     },
 ]

@@ -13,7 +13,7 @@ function Footer() {
             {
                 !isValidOrder
                     ? <button disabled >Selecione os 3 itens para fechar o pedido</button>
-                    : <Link to={{pathname:"/confirmation", state: order}} className="button" id="enabled">Selecione os 3 itens para fechar o pedido</Link>
+                    : <Link to={{pathname:"/confirmation", state: order}} className="button" id="enabled">Fechar pedido</Link>
             }
         </footer>
     )
